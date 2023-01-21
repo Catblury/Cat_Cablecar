@@ -14,7 +14,6 @@ Drag and Drop To Main Game File
 
 ```
 ensure Cad_Cablecar
-
 ```
 
 __If You Have Any Doubt Join My Discord Server - https://discord.gg/CTsYHd7WzR__
