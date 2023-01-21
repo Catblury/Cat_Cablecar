@@ -12,7 +12,10 @@ Info: If you're using FiveM some Scenarios don't will work, because FiveM not up
 
 Drag and Drop To Main Game File
 
-```ensure Cad_Cablecar```
+```
+ensure Cad_Cablecar
+
+```
 
 __If You Have Any Doubt Join My Discord Server - https://discord.gg/CTsYHd7WzR__
 
