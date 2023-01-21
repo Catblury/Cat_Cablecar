@@ -1,5 +1,8 @@
 # **Cad_Cablecar**
 
+Special Thanks To 
+Discord - Sparky#6588
+
 An implementation of the Pala Springs Aerial Tramway for FiveM
 
 Game Version: 1.0.1868.0
