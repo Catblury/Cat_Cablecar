@@ -1,7 +1,7 @@
 # **Cad_Cablecar**
 
 Special Thanks To 
-Discord - Sparky#6588
+```Discord - Sparky#6588```
 
 An implementation of the Pala Springs Aerial Tramway for FiveM
 
