@@ -203,8 +203,8 @@ Citizen.CreateThread(function()
     end
 end)
 
-RegisterNetEvent("omni:cablecar:forceState")
-AddEventHandler("omni:cablecar:forceState", function(index, state)
+RegisterNetEvent("cad:cablecar:forceState")
+AddEventHandler("cad:cablecar:forceState", function(index, state)
     local cablecar = CABLE_CARS[index]
     if state == "IDLE_BOTTOM" then
         cablecar.state = "MOVE_TO_IDLE_BOTTOM"
@@ -407,7 +407,7 @@ function UpdateCablecarMovement(cablecar)
                 -- Set to raw idle to do nothing and ask the server to sync cars
                 cablecar.state = "IDLE"
                 cablecar.gradient_distance = 0.0
-                TriggerServerEvent("omni:cablecar:host:sync", cablecar.index, "IDLE_BOTTOM")
+                TriggerServerEvent("cad:cablecar:host:sync", cablecar.index, "IDLE_BOTTOM")
                 return
             end
 
