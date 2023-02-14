@@ -9,8 +9,4 @@ description 'CableCar for QBCore'
 
 
 client_script "cablecar.lua"
-
-server_script "cablecar_controller.lua"
-
-client_script "cablecar.lua"
 server_script "cablecar_controller.lua"
