@@ -8,7 +8,8 @@
     Cars makes noise upon arrival and departure, and makes a running sound while moving
 ]]
 
--- Lerp, not to be confused with Always Be Smart Role Play
+-- Lerp, not to be confused with Project Detox
+
 function Lerp(a, b, t)
 	return a + (b - a) * t
 end
@@ -82,7 +83,7 @@ local CABLE_CARS = {
         offset_modifier = 0.0, -- Something believed to be an offset modifier
         can_move = true, -- Determine if the car can move, not actually used here though
         is_player_seated = false, -- Another value from the SP script, not actually used because fucking hell I'm tired
-        speed = 45.5, -- Movement speed modifier, determines the speed of the car on the track
+        speed = 17.5, -- Movement speed modifier, determines the speed of the car on the track
 		maxSpeedDistance = 50, -- Distance from station at which the car will attain maximum speed
         state = "IDLE", -- The current state of the car
 	showTramBlips = true, -- Show blip on the map
@@ -105,7 +106,7 @@ local CABLE_CARS = {
         offset_modifier = 0.0,
         can_move = true,
         is_player_seated = false,
-        speed = 45.5,
+        speed = 17.5,
 		maxSpeedDistance = 50,
         state = "IDLE",
 	showTramBlips = true,
@@ -159,8 +160,8 @@ Citizen.CreateThread(function()
     AttachEntityToEntity(CABLE_CARS[1].doorRR, CABLE_CARS[1].entity, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 180.0, 0, 0, 1, 0, 2, 1)
 
     -- Align everything so it fits on the track
-    FreezeEntityPosition(CABLE_CARS[0].entity, false)
-    FreezeEntityPosition(CABLE_CARS[1].entity, false)
+    FreezeEntityPosition(CABLE_CARS[0].entity, true)
+    FreezeEntityPosition(CABLE_CARS[1].entity, true)
     SetEntityRotation(CABLE_CARS[0].entity, 0.0, 0.0, 270.0, 0, 1)
     SetEntityRotation(CABLE_CARS[1].entity, 0.0, 0.0, 90.0, 0, 1)
 
