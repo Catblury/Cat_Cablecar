@@ -1,5 +1,5 @@
 --[[
-    Skyway Tram (Cablecar) by Cadbury, Nov. 2022
+    Skyway Tram (Cablecar) by Cadbury and Sparky, Nov. 2022
     Thanks to:
         IllusiveTea for moral support and introduing me to the topic of cable cars
 
